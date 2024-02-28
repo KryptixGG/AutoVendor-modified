@@ -1,6 +1,6 @@
 r38.5 No clue how this changelog-thing works: 2024-02-28 22:16:00
 Registers CHAT_MSG_ADDON to use the following Macro to to add items to the junk-list via mouseover:
-/script GetMouseFocus():Click(LeftButton, true); SendAddonMessage("avjunk",select(3,GetCursorInfo()) ,"WHISPER","Grumgrr"); ClearCursor()
+/script GetMouseFocus():Click(LeftButton, true); SendAddonMessage("avjunk",select(3,GetCursorInfo()) ,"WHISPER",GetUnitName("player")); ClearCursor()
 ------------------------------------------------------------------------
 r38 | egrimm | 2010-09-18 16:21:59 +0000 (Sat, 18 Sep 2010) | 1 line
 Changed paths:
